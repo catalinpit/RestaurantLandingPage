@@ -33,6 +33,6 @@ app.post("/register", function(req, res){
     });
 });
 
-app.listen(8081, function(){
+app.listen(process.env.PORT, process.env.IP, function(){
     console.log("The server has started!");
 });
